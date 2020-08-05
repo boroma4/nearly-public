@@ -1,0 +1,46 @@
+stages:
+  - test
+  - build
+  - deploy
+
+before_script:
+  - chmod +x ./gradlew
+  - export GRADLE_USER_HOME=`pwd`/.gradle
+
+test nearly:
+  stage: test
+  tags:
+    - nearly spring aws gitlab
+  script:
+    - ./gradlew check
+  artifacts:
+    reports:
+      junit: build/test-results/test/TEST-*.xml
+
+build nearly:
+  stage: build
+  only:
+    - master
+  cache:
+    paths:
+      - .gradle/wrapper
+      - .gradle/caches
+  artifacts:
+    paths:
+      - build/libs
+  tags:
+    - nearly spring aws gitlab
+  script:
+    - ./gradlew assemble
+
+deploy nearly:
+  stage: deploy
+  only:
+    - master
+  tags:
+    - nearly spring aws gitlab
+  script:
+    - mkdir -p ~/api-deployment
+    - rm -rf ~/api-deployment/nearly.jar
+    - cp -r build/libs/. ~/api-deployment
+    - sudo service nearly restart

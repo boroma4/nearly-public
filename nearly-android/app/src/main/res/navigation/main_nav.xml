@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/friendsFragment">
+
+    <fragment
+        android:id="@+id/friendsFragment"
+        android:name="com.hotukrainianboyz.nearly.fragment.FriendsFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_friends" >
+        <action
+            android:id="@+id/action_friendsFragment_to_friendRequestsFragment"
+            app:destination="@id/friendRequestsFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_friendsFragment_to_userProfileFragment"
+            app:destination="@id/userProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/logoutFragment"
+        android:name="com.hotukrainianboyz.nearly.fragment.LogoutFragment"
+        android:label="@string/logging_out"
+        tools:layout="@layout/fragment_logout" >
+        <action
+            android:id="@+id/action_logoutFragment_to_loginActivity"
+            app:destination="@id/loginActivity"
+            app:exitAnim="@android:anim/fade_out"
+            app:popExitAnim="@android:anim/fade_out"
+            app:popUpTo="@id/friendsFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="com.hotukrainianboyz.nearly.activity.LoginActivity"
+        android:label="login_activity"
+        tools:layout="@layout/login_activity" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.hotukrainianboyz.nearly.fragment.SettingsFragment"
+        android:label="@string/settings" />
+    <!--Global action-->
+    <action android:id="@+id/open_settings_fragment"
+        app:destination="@id/settingsFragment"/>
+    <fragment
+        android:id="@+id/friendRequestsFragment"
+        android:name="com.hotukrainianboyz.nearly.fragment.GeneralFriendRequestsFragment"
+        android:label="@string/friend_requests" />
+    <fragment
+        android:id="@+id/userProfileFragment"
+        android:name="com.hotukrainianboyz.nearly.fragment.UserProfileFragment"
+        android:label="@string/profile"
+        tools:layout="@layout/fragment_user_profile" />
+    <fragment
+        android:id="@+id/blockedUsersFragment"
+        android:name="com.hotukrainianboyz.nearly.fragment.BlockedUsersFragment"
+        android:label="@string/blocked_users"
+        tools:layout="@layout/fragment_blocked_users" />
+</navigation>

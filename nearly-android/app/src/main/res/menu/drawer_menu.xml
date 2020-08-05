@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@id/friendsFragment"
+        android:icon="@drawable/ic_group_black_24dp"
+        android:title="@string/friends"
+        android:checked="true"/>
+    <item
+        android:id="@id/friendRequestsFragment"
+        android:icon="@drawable/ic_baseline_face_24"
+        app:actionViewClass="android.widget.TextView"
+        android:title="@string/friend_requests" />
+    <item
+        android:id="@id/blockedUsersFragment"
+        android:icon="@drawable/ic_baseline_sentiment_dissatisfied_24"
+        app:actionViewClass="android.widget.TextView"
+        android:title="@string/blocked_users" />
+    <item
+        android:id="@id/settingsFragment"
+        android:icon="@drawable/ic_settings_black_24dp"
+        android:title="@string/settings"/>
+    <item
+        android:id="@id/support_ad_menu_item"
+        android:icon="@drawable/ic_advertisement"
+        android:title="@string/support_us" />
+    <item
+        android:id="@id/logoutFragment"
+        android:icon="@drawable/ic_exit_to_app_black_24dp"
+        android:title="@string/logout" />
+
+</menu>

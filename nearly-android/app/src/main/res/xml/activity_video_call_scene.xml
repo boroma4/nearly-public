@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ConstraintSet android:id="@+id/local_view_start"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/call_status_text_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/end_call_btn" />
+    </ConstraintSet>
+    <ConstraintSet android:id="@+id/local_view_end"
+        android:layout_width="200dp"
+        android:layout_height="250dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <Constraint
+            android:id="@+id/local_gl_surface_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="200dp"
+            android:layout_height="250dp"
+            app:layout_constraintBottom_toBottomOf="parent" />
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/call_status_text_view"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/end_call_btn" />
+    </ConstraintSet>
+    <Transition
+        android:id="@+id/local_view_shrink"
+        app:constraintSetStart="@+id/local_view_start"
+        app:constraintSetEnd="@+id/local_view_end" />
+</MotionScene>
