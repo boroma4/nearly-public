@@ -11,7 +11,7 @@ REST API built with: Spring Boot (Java).
 
 Websocket server built with: ASP.NET Core SignalR.
 
-You can subscribe to see latest apk releases here: https://appdistribution.firebase.dev/i/c1fd3be89d086f7e
+You can subscribe to see latest apk releases here: https://appdistribution.firebase.dev/i/cb1f9de9580488a9
 ![Drawer](https://github.com/boroma4/nearly-public/blob/master/screenshots/drawer.PNG)
 ![Search](https://github.com/boroma4/nearly-public/blob/master/screenshots/search.PNG)
 ![Call](https://github.com/boroma4/nearly-public/blob/master/screenshots/call.PNG)
