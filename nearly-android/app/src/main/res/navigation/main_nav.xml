@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/friendsFragment"
-        android:name="com.hotukrainianboyz.nearly.fragment.FriendsFragment"
+        android:name="com.ukrainianboyz.nearly.fragment.FriendsFragment"
         android:label="@string/app_name"
         tools:layout="@layout/fragment_friends" >
         <action
@@ -23,7 +23,7 @@
     </fragment>
     <fragment
         android:id="@+id/logoutFragment"
-        android:name="com.hotukrainianboyz.nearly.fragment.LogoutFragment"
+        android:name="com.ukrainianboyz.nearly.fragment.LogoutFragment"
         android:label="@string/logging_out"
         tools:layout="@layout/fragment_logout" >
         <action
@@ -36,28 +36,28 @@
     </fragment>
     <activity
         android:id="@+id/loginActivity"
-        android:name="com.hotukrainianboyz.nearly.activity.LoginActivity"
+        android:name="com.ukrainianboyz.nearly.activity.LoginActivity"
         android:label="login_activity"
         tools:layout="@layout/login_activity" />
     <fragment
         android:id="@+id/settingsFragment"
-        android:name="com.hotukrainianboyz.nearly.fragment.SettingsFragment"
+        android:name="com.ukrainianboyz.nearly.fragment.SettingsFragment"
         android:label="@string/settings" />
     <!--Global action-->
     <action android:id="@+id/open_settings_fragment"
         app:destination="@id/settingsFragment"/>
     <fragment
         android:id="@+id/friendRequestsFragment"
-        android:name="com.hotukrainianboyz.nearly.fragment.GeneralFriendRequestsFragment"
+        android:name="com.ukrainianboyz.nearly.fragment.GeneralFriendRequestsFragment"
         android:label="@string/friend_requests" />
     <fragment
         android:id="@+id/userProfileFragment"
-        android:name="com.hotukrainianboyz.nearly.fragment.UserProfileFragment"
+        android:name="com.ukrainianboyz.nearly.fragment.UserProfileFragment"
         android:label="@string/profile"
         tools:layout="@layout/fragment_user_profile" />
     <fragment
         android:id="@+id/blockedUsersFragment"
-        android:name="com.hotukrainianboyz.nearly.fragment.BlockedUsersFragment"
+        android:name="com.ukrainianboyz.nearly.fragment.BlockedUsersFragment"
         android:label="@string/blocked_users"
         tools:layout="@layout/fragment_blocked_users" />
 </navigation>

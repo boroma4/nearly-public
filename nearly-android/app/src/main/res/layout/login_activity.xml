@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.hotukrainianboyz.nearly.activity.LoginActivity">
+    tools:context="com.ukrainianboyz.nearly.activity.LoginActivity">
 
     <fragment
         android:layout_width="match_parent"

@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bckg"
-    tools:context="com.hotukrainianboyz.nearly.fragment.LoginFragment">
+    tools:context="com.ukrainianboyz.nearly.fragment.LoginFragment">
 
 
     <com.google.android.gms.common.SignInButton

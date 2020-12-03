@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.hotukrainianboyz.nearly">
+    package="com.ukrainianboyz.nearly">
 
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.CAMERA" />
@@ -15,7 +15,7 @@
 
 
     <application
-        android:name=".Application"
+        android:name="com.ukrainianboyz.nearly.Application"
         android:allowBackup="false"
         android:directBootAware="true"
         android:icon="@mipmap/ic_launcher"
@@ -25,7 +25,7 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".activity.SplashScreenActivity"
+            android:name="com.ukrainianboyz.nearly.activity.SplashScreenActivity"
             android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -33,21 +33,21 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.LoginActivity" />
+        <activity android:name="com.ukrainianboyz.nearly.activity.LoginActivity" />
         <activity
-            android:name=".activity.MainActivity"
+            android:name="com.ukrainianboyz.nearly.activity.MainActivity"
             android:windowSoftInputMode="adjustPan" />
-        <activity android:name=".activity.VideoCallActivity" />
+        <activity android:name="com.ukrainianboyz.nearly.activity.VideoCallActivity" />
         <activity
-            android:name=".activity.CallNotificationActivity"
+            android:name="com.ukrainianboyz.nearly.activity.CallNotificationActivity"
             android:directBootAware="true" />
-        <activity android:name=".activity.GameActivity"/>
+        <activity android:name="com.ukrainianboyz.nearly.activity.GameActivity"/>
 
 
-        <receiver android:name=".utils.broadcastReceiver.FriendNotificationBroadcastReceiver" />
+        <receiver android:name="com.ukrainianboyz.nearly.utils.broadcastReceiver.FriendNotificationBroadcastReceiver" />
 
         <service
-            android:name=".service.firebase.FirebaseMessagingService"
+            android:name="com.ukrainianboyz.nearly.service.firebase.FirebaseMessagingService"
             android:directBootAware="true"
             android:exported="false">
             <intent-filter>

@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Nearly</string>
-    <string name="google_server_client_id">xx</string>
+    <string name="google_server_client_id">868005733233-6d4fdtl8npfv39967p0jhlvhbvpc9a4j.apps.googleusercontent.com</string>
     <string name="app_logo_accessibility_desc">Logo</string>
     <string name="friends">Friends</string>
     <string name="logout">Logout</string>
