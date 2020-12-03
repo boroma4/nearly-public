@@ -1,8 +1,15 @@
 # Nearly
 
-Nearly is an app for video calls.
+Nearly is an app for peer-to-peer video calls.
 
-Please note that backend is not deployed at the moment, so it won't be possible to use the app.
+
+Client app built with: Android (Kotlin) and WebRTC library.
+
+
+REST API built with: Spring Boot (Java).
+
+
+Websocket server built with: ASP.NET Core SignalR.
 
 You can subscribe to see latest apk releases here: https://appdistribution.firebase.dev/i/c1fd3be89d086f7e
 ![Drawer](https://github.com/boroma4/nearly-public/blob/master/screenshots/drawer.PNG)
